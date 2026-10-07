@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Mochito",
+    "slug": "mochito",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "mochito",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mochito.app"
+    },
+    "android": {
+      "package": "com.mochito.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FBFAF4",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FBFAF4",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-sqlite"
+    ]
+  }
+}
